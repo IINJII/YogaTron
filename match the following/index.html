@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match the Correct Answer Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Match the Correct Answer</h1>
+        <div class="columns">
+            <div class="column">
+                <h2>Questions</h2>
+                <ul id="questions-list">
+                    <!-- Questions will be populated here -->
+                </ul>
+                <div class="text-boxes">
+                    <!-- Textboxes for user answers will be populated here -->
+                </div>
+            </div>
+            <div class="column">
+                <h2>Answers</h2>
+                <ul id="answers-list">
+                    <!-- Answers will be populated here -->
+                </ul>
+            </div>
+        </div>
+        <div class="answer-space">
+            <button id="check-answers">Check Answers</button>
+        </div>
+        <div class="score">
+            <p id="score">Score: <span id="score-value">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
