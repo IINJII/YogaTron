@@ -49,3 +49,21 @@ body{
 #buttonContainer div div:hover{
     border-radius: 30px;
 }
+
+@media screen and (max-width: 457px){
+    #jumboText{
+        font-size: 0.8em;
+    }
+
+    #innerContainer{
+        width: 75%;
+    }
+
+    #buttonContainer div div{
+        width: 150px;
+    }
+
+    #activityHeading{
+        font-size: 1em;
+    }
+}
