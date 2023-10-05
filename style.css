@@ -27,11 +27,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #buttonContainer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
+    width: 127px;
 }
 
 #buttonContainer div div{
@@ -44,6 +49,10 @@ body{
     background-image: linear-gradient(to right, #a8ff78 , #78ffd6);
     transition: 0.5s;
     box-shadow: 10px 10px black;
+}
+
+.content{
+    flex-basis: 48%;
 }
 
 #buttonContainer div div:hover{
@@ -65,5 +74,27 @@ body{
 
     #activityHeading{
         font-size: 1em;
+    }
+}
+
+
+
+@media screen and (max-width: 577px){
+    .buttonContainer{
+        flex-direction: column;
+    }
+    .content{
+        flex-basis: 100%;
+    }
+    #innerContainer{
+        width: 75%;
+    }
+}
+
+
+
+@media screen and (max-width: 814px){
+    #innerContainer{
+        width: 95%;
     }
 }
